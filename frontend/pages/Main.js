@@ -5,7 +5,7 @@ export default function Main() {
     <>
     <Head>
         <title>EcoChain</title>
-        <meta name="description" content="EcoChain" />
+        <meta name="description" content="Empowering SMBs with sustainable logistics solutions." />
     </Head>
    <h1>Hi</h1>
    </>
