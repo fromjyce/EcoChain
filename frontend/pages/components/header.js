@@ -24,13 +24,13 @@ const Header = () => {
             More About Us
           </Link>
           <Link
-            href="/sign-up"
+            href="/signup"
             className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign Up
           </Link>
           <Link
-            href="/sign-in"
+            href="/signin"
             className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign In
@@ -56,14 +56,14 @@ const Header = () => {
               More About Us
             </Link>
             <Link
-              href="/sign-up"
+              href="/signup"
               className="block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition"
               onClick={() => setMenuOpen(false)}
             >
               Sign Up
             </Link>
             <Link
-              href="/sign-in"
+              href="/signin"
               className="block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition"
               onClick={() => setMenuOpen(false)}
             >
