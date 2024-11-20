@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { FaExclamationCircle } from "react-icons/fa"; // Importing the exclamation icon
+import { FaExclamationCircle } from "react-icons/fa";
 import Footer from "./components/footer";
 
 export default function SignIn() {
