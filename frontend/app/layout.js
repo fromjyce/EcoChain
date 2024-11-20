@@ -1,4 +1,23 @@
 import "./globals.css";
+import {Poppins, Urbanist, Kumbh_Sans} from "next/font/google";
+
+const poppins_init = Poppins({
+  subsets: ['latin'],
+  weight: ['100','200','300','400','500','600','700','800','900'],
+  variable: '--font-poppins',
+});
+
+const urbanist_init = Urbanist({
+  subsets: ['latin'],
+  weight: ['100','200','300','400','500','600','700','800','900'],
+  variable: '--font-urbanist',
+});
+
+const kumbh_sans_init = Kumbh_Sans({
+  subsets: ['latin'],
+  weight: ['100','200','300','400','500','600','700','800','900'],
+  variable: '--font-kumbh_sans',
+});
 
 export const metadata = {
   title: "EcoChain",
@@ -9,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className="antialiased"
+        className={`${urbanist_init.variable} ${kumbh_sans_init.variable} ${poppins_init.variable}`}
       >
         {children}
       </body>
