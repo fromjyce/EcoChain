@@ -46,10 +46,9 @@ export default function Main() {
             Why Choose EcoChain?
           </h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Feature Card 1 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <img
-                src="/route-optimization.png" // Replace with your image path
+                src="/main/route.png"
                 alt="Route Optimization"
                 className="w-20 h-20 mx-auto mb-4"
               />
@@ -58,11 +57,9 @@ export default function Main() {
                 Minimize delivery distances and emissions with real-time traffic and weather data.
               </p>
             </div>
-
-            {/* Feature Card 2 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <img
-                src="/smart-packaging.png" // Replace with your image path
+                src="/main/packaging.png"
                 alt="Smart Packaging"
                 className="w-20 h-20 mx-auto mb-4"
               />
@@ -71,11 +68,9 @@ export default function Main() {
                 Foster sustainability with reusable packaging solutions for SMBs.
               </p>
             </div>
-
-            {/* Feature Card 3 */}
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <img
-                src="/eco-dashboard.png" // Replace with your image path
+                src="/main/dashboard.png"
                 alt="Eco Dashboard"
                 className="w-20 h-20 mx-auto mb-4"
               />
