@@ -1,8 +1,14 @@
+"use client";
+import { useEffect, useState } from 'react';
 import Head from "next/head";
 import { FaExclamationCircle } from "react-icons/fa";
 import Footer from "./components/footer";
 
 export default function SignIn() {
+  const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
   return (
     <>
       <Head>
