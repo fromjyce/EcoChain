@@ -30,3 +30,7 @@
 .kumbh_sans {
   font-family: var(--font-kumbh_sans);
 }
+
+.first-section-main {
+  margin-left: 20rem;
+}
