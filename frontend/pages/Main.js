@@ -28,7 +28,7 @@ export default function Main() {
       </p>
       <div className="mt-6">
         <a
-          href="/sign-up"
+          href="/signup"
           className="bg-yellow-300 text-[#102409] kumbh_sans py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-400 transition"
         >
           Get Started
