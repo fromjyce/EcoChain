@@ -18,56 +18,52 @@ const Header = () => {
         </div>
         <div className="hidden md:flex space-x-6">
           <Link
-            href="#about"
+            href="/about"
             className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             More About Us
           </Link>
           <Link
-            href="/register"
+            href="/sign-up"
             className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign Up
           </Link>
           <Link
-            href="/login"
+            href="/sign-in"
             className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign In
           </Link>
         </div>
-
-        {/* Hamburger Menu (Mobile View) */}
         <div className="md:hidden">
           <button
             className="text-green-500 focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)} // Toggle menu visibility
+            onClick={() => setMenuOpen(!menuOpen)}
           >
             <FaBars className="text-2xl" />
           </button>
         </div>
       </div>
-
-      {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white shadow-lg py-4">
           <nav className="space-y-4 text-center">
             <Link
-              href="#about"
+              href="/about"
               className="block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition"
-              onClick={() => setMenuOpen(false)} // Close menu after click
+              onClick={() => setMenuOpen(false)}
             >
               More About Us
             </Link>
             <Link
-              href="/register"
+              href="/sign-up"
               className="block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition"
               onClick={() => setMenuOpen(false)}
             >
               Sign Up
             </Link>
             <Link
-              href="/login"
+              href="/sign-in"
               className="block bg-green-500 text-white px-4 py-2 rounded-lg font-bold hover:bg-green-600 transition"
               onClick={() => setMenuOpen(false)}
             >
