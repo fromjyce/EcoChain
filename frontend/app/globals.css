@@ -10,6 +10,7 @@
   --light-yellow: #fefee3ff;
   --melon: #ffc9b9ff;
   --persian-orange: #d68c45ff;
+  --tint-green: #102409;
 }
 
 @media (prefers-color-scheme: dark) {
