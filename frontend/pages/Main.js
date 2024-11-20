@@ -1,6 +1,7 @@
 "use client";
 import Head from "next/head";
 import { useEffect, useState } from 'react';
+import Footer from "./components/footer";
 
 export default function Main() {
     const [isClient, setIsClient] = useState(false);
@@ -13,20 +14,20 @@ export default function Main() {
         <title>EcoChain</title>
         <meta name="description" content="Empowering SMBs with sustainable logistics solutions." />
       </Head>
-      <main className="bg-gray-50 min-h-screen">
+      <main className="bg-[#fefee3ff] min-h-screen">
       <section className="bg-green-500 text-white">
   <div className="container px-8 py-12 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-1 first-section-main">
     <div className="md:w-1/2 text-center md:text-left">
-      <h1 className="text-4xl font-bold md:text-5xl">
+      <h1 className="text-4xl font-bold md:text-5xl poppins">
         Welcome to <span className="text-yellow-300">EcoChain</span>
       </h1>
-      <p className="mt-4 text-lg md:text-xl">
+      <p className="mt-4 text-lg md:text-xl urbanist">
         Pioneering Sustainable Logistics for SMBs in India
       </p>
       <div className="mt-6">
         <a
           href="#features"
-          className="bg-yellow-300 text-green-900 py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-400 transition"
+          className="bg-yellow-300 text-[#102409] kumbh_sans py-3 px-6 rounded-lg shadow-md text-lg hover:bg-yellow-400 transition"
         >
           Learn More
         </a>
@@ -41,8 +42,8 @@ export default function Main() {
     </div>
   </div>
 </section>
-        <section id="features" className="container mx-auto px-6 py-16">
-          <h2 className="text-3xl font-bold text-center text-gray-800">
+        <section id="features" className="container mx-auto px-6 py-16 bg-[#fefee3ff]">
+          <h2 className="text-3xl font-bold text-center text-[#2c6e49ff] poppins">
             Why Choose EcoChain?
           </h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -52,8 +53,8 @@ export default function Main() {
                 alt="Route Optimization"
                 className="w-20 h-20 mx-auto mb-4"
               />
-              <h3 className="font-bold text-lg">AI-Powered Route Optimization</h3>
-              <p className="mt-2 text-gray-600">
+              <h3 className="font-bold text-lg urbanist text-[#102409]">AI-Powered Route Optimization</h3>
+              <p className="mt-2 text-[#343434] kumbh_sans">
                 Minimize delivery distances and emissions with real-time traffic and weather data.
               </p>
             </div>
@@ -63,8 +64,8 @@ export default function Main() {
                 alt="Smart Packaging"
                 className="w-20 h-20 mx-auto mb-4"
               />
-              <h3 className="font-bold text-lg">Smart Packaging Exchange</h3>
-              <p className="mt-2 text-gray-600">
+              <h3 className="font-bold text-lg urbanist text-[#102409]">Smart Packaging Exchange</h3>
+              <p className="mt-2 text-[#343434] kumbh_sans">
                 Foster sustainability with reusable packaging solutions for SMBs.
               </p>
             </div>
@@ -74,20 +75,14 @@ export default function Main() {
                 alt="Eco Dashboard"
                 className="w-20 h-20 mx-auto mb-4"
               />
-              <h3 className="font-bold text-lg">Eco-Dashboard</h3>
-              <p className="mt-2 text-gray-600">
+              <h3 className="font-bold text-lg urbanist text-[#102409]">Eco-Dashboard</h3>
+              <p className="mt-2 text-[#343434] kumbh_sans">
                 Track carbon footprints and enhance sustainability efforts.
               </p>
             </div>
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="bg-gray-800 text-gray-300 py-6">
-          <div className="container mx-auto text-center">
-            <p>© 2024 EcoChain. All rights reserved.</p>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </>
   );
