@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #fefee3ff;
   --foreground: #171717;
+  --dark-spring-green: #2c6e49ff;
+  --sea-green: #4c956cff;
+  --light-yellow: #fefee3ff;
+  --melon: #ffc9b9ff;
+  --persian-orange: #d68c45ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #fefee3ff;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
