@@ -68,13 +68,13 @@ export default function SignIn() {
               </p>
             </div>
           </div>
-          <div className="w-1/2 bg-green-500 text-white flex flex-col items-center justify-center">
+          <div className="w-1/2 bg-green-500 flex flex-col items-center justify-center">
             <img
               src="/logos/white_yellow.png"
               alt="EcoChain Logo"
               className="h-32 w-auto mb-4"
             />
-            <p className="text-lg font-bold poppins text-center px-6">
+            <p className="text-lg font-bold text-[#fefee3ff] poppins text-center px-6">
               Empowering SMBs with Sustainable Logistics
             </p>
           </div>
