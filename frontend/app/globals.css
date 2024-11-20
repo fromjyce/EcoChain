@@ -35,3 +35,15 @@
 .first-section-main {
   padding-left: 27rem;
 }
+
+.signin-top-spacer {
+height: 8.9rem;
+}
+
+.signin-bottom-spacer {
+  height: 8.3rem;
+}
+
+.signin-note-icon {
+  font-size: 3rem;
+}
