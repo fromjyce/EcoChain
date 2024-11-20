@@ -84,7 +84,7 @@ export default function SignIn() {
               </a>
             </p>
           </div>
-          <div className="w-1/2 bg-green-500 text-white flex flex-col items-center justify-center">
+          <div className="w-1/2 bg-green-500 flex flex-col items-center justify-center">
             <img
               src="/logos/white_yellow.png"
               alt="EcoChain Logo"
