@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "EcoChain",
-  description: "A smart, AI-driven solution designed  to optimize logistics and waste management for  SMBs, leveraging Amazon's powerful  infrastructure to promote sustainability while  maximizing efficiency.",
+  description: "Empowering SMBs with sustainable logistics solutions.",
 };
 
 export default function RootLayout({ children }) {
