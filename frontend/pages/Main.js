@@ -2,6 +2,7 @@
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Footer from "./components/footer";
+import Header from "./components/header";
 
 export default function Main() {
     const [isClient, setIsClient] = useState(false);
@@ -14,6 +15,7 @@ export default function Main() {
         <title>EcoChain</title>
         <meta name="description" content="Empowering SMBs with sustainable logistics solutions." />
       </Head>
+      <Header />
       <main className="bg-[#fefee3ff] min-h-screen">
       <section className="bg-green-500 text-white">
   <div className="container px-8 py-12 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-1 first-section-main">
