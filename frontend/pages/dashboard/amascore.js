@@ -9,7 +9,7 @@ const GreenScoreWidget = ({ todayScore, previousDayScore, nextDayScore }) => {
 
   return (
     <div className="p-3 bg-[#6eaa88] rounded shadow">
-      <h2 className="text-2xl font-bold urbanist text-[#42282c] mb-1">
+      <h2 className="text-2xl font-bold urbanist text-[#363529] mb-1">
         Amazon Green Score
       </h2>
       <p className="text-base urbanist text-[#f4f4f4] mb-3">
