@@ -15,7 +15,7 @@ const Sidebar = () => {
   const router = useRouter();
 
   return (
-    <div className="flex flex-col h-screen w-64 bg-[#2c6e49ff]">
+    <div className="flex flex-col min-h-screen w-64 bg-[#2c6e49ff]">
       <div className="flex items-center justify-center p-4 bg-[#1f4d33] space-x-3">
         <img
           src="/logos/white_yellow.png"
