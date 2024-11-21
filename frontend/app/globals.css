@@ -33,6 +33,10 @@
   font-family: var(--font-kumbh_sans);
 }
 
+.kanit {
+  font-family: var(--font-kanit);
+}
+
 .first-section-main {
   padding-left: 27rem;
 }
