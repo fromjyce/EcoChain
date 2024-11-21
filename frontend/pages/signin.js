@@ -28,7 +28,7 @@ export default function SignIn() {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
                   placeholder="Enter your email"
                   required
                 />
@@ -40,7 +40,7 @@ export default function SignIn() {
                 <input
                   type="password"
                   id="password"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
                   placeholder="Enter your password"
                   required
                 />
@@ -48,15 +48,15 @@ export default function SignIn() {
               <div className="mt-6">
                 <button
                   type="submit"
-                  className="w-full bg-green-500 text-white font-bold urbanist py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition"
+                  className="w-full bg-[#4c956cff] text-white font-bold urbanist py-2 px-4 rounded-lg shadow-md hover:bg-green-600 transition"
                 >
-                  Log In
+                  Sign In
                 </button>
               </div>
             </form>
             <p className="mt-4 text-sm text-[#2c6e49ff] font-bold poppins text-center">
               Don't have an account?{" "}
-              <a href="/signup" className="text-green-500 hover:underline hover:text-[#102409]">
+              <a href="/signup" className="text-[#4c956cff] hover:underline hover:text-[#102409]">
                 Sign Up
               </a>
             </p>
@@ -68,7 +68,7 @@ export default function SignIn() {
               </p>
             </div>
           </div>
-          <div className="w-1/2 bg-green-500 flex flex-col items-center justify-center">
+          <div className="w-1/2 bg-[#4c956cff] flex flex-col items-center justify-center">
             <img
               src="/logos/white_yellow.png"
               alt="EcoChain Logo"
