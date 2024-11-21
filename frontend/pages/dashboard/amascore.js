@@ -9,10 +9,10 @@ const GreenScoreWidget = ({ todayScore, previousDayScore, nextDayScore }) => {
 
   return (
     <div className="p-3 bg-[#6eaa88] rounded shadow">
-      <h2 className="text-2xl font-bold urbanist text-[#42282c] mb-1 text-center">
+      <h2 className="text-2xl font-bold urbanist text-[#42282c] mb-1">
         Amazon Green Score
       </h2>
-      <p className="text-base urbanist text-[#f4f4f4] text-center mb-2">
+      <p className="text-base urbanist text-[#f4f4f4] mb-3">
         The <strong>Amazon Green Score</strong> tracks the environmental sustainability of your 
         e-commerce logistics by evaluating metrics like carbon footprint, 
         reusable packaging, and eco-conscious delivery options.
