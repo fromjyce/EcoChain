@@ -41,7 +41,7 @@ const Sidebar = () => {
         </ul>
       </nav>
       <div className="flex items-center justify-center p-4 mt-auto bg-[#1f4d33] text-[#fefee3ff] text-center kumbh_sans text-sm font-medium">
-        <p>Developed by Team Pravah for Amazon Smbhav Hackathon 2024</p>
+        <p>Developed by <strong>Team Pravah</strong> for <strong>Amazon Smbhav Hackathon 2024</strong>.</p>
       </div>
     </div>
     </div>
