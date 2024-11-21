@@ -1,5 +1,6 @@
 const Navbar = ({ smbName, logoPath, onLogout }) => {
     return (
+      <div className="navbar">
       <header className="flex items-center justify-between bg-[#2c6e49ff] p-4 text-[#fefee3ff]">
         <div className="flex items-center">
           <img src={logoPath} alt={`${smbName} Logo`} className="h-10 mr-3" />
@@ -12,6 +13,7 @@ const Navbar = ({ smbName, logoPath, onLogout }) => {
           Logout
         </button>
       </header>
+      </div>
     );
   };
   
