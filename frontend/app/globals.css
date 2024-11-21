@@ -81,3 +81,10 @@ height: 8.9rem;
   background-color: #2c6e49ff;
   z-index: 9;
 }
+
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 70px;
+  padding-left: 250px;
+}
