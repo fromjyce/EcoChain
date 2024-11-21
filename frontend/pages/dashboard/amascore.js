@@ -1,0 +1,29 @@
+import GSWidget from './GSWidget';
+
+const GreenScoreWidget = ({ todayScore, previousDayScore, nextDayScore }) => {
+  const today = new Date();
+  const previousDay = new Date(today);
+  const nextDay = new Date(today);
+  previousDay.setDate(today.getDate() - 1);
+  nextDay.setDate(today.getDate() + 1);
+
+  return (
+    <div className="p-3 bg-[#5ea07b] rounded shadow">
+      <h2 className="text-2xl font-bold urbanist text-[#42282c] mb-1 text-center">
+        Amazon Green Score
+      </h2>
+      <p className="text-sm urbanist text-white text-center mb-2">
+        The <strong>Amazon Green Score</strong> tracks the environmental sustainability of your 
+        e-commerce logistics by evaluating metrics like carbon footprint, 
+        reusable packaging, and eco-conscious delivery options.
+      </p>
+      <div className="grid grid-cols-3 gap-4">
+        <GSWidget score={previousDayScore} date={previousDay.toISOString()} />
+        <GSWidget score={todayScore} date={today.toISOString()} />
+        <GSWidget score={nextDayScore} date={nextDay.toISOString()} />
+      </div>
+    </div>
+  );
+};
+
+export default GreenScoreWidget;
