@@ -1,4 +1,11 @@
+"use client";
+import { useEffect, useState } from "react";
+
 const Navbar = ({ smbName, logoPath, onLogout }) => {
+  const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
     return (
       <div className="navbar">
       <header className="flex items-center justify-between bg-[#2c6e49ff] p-4 text-[#fefee3ff]">
