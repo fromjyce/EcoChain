@@ -1,11 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { FaBars } from "react-icons/fa6";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
   return (
     <header className="bg-[#fefee3ff] shadow-lg">
@@ -13,25 +17,25 @@ const Header = () => {
         <div className="flex items-center space-x-3">
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/logos/green_green.png" alt="EcoChain Logo" width={40} height={40} />
-            <div className="text-green-500 text-3xl font-bold poppins">EcoChain</div>
+            <div className="text-[#4C956C] text-3xl font-bold poppins">EcoChain</div>
           </Link>
         </div>
         <div className="hidden md:flex space-x-6">
           <Link
             href="/about"
-            className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
+            className="bg-[#4C956C] text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             More About Us
           </Link>
           <Link
             href="/signup"
-            className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
+            className="bg-[#4C956C] text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign Up
           </Link>
           <Link
             href="/signin"
-            className="bg-green-500 text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
+            className="bg-[#4C956C] text-white px-4 py-2 urbanist font-bold rounded-lg hover:bg-green-600 transition"
           >
             Sign In
           </Link>
