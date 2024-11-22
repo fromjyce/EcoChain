@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FaHome, FaRoute, FaTruck, FaChartLine, FaUserCircle } from 'react-icons/fa';
@@ -13,6 +14,10 @@ const navItems = [
 
 const Sidebar = () => {
   const router = useRouter();
+  const [isClient, setIsClient] = useState(false);
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
   return (
     <div className='sidebar'>
