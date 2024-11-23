@@ -9,10 +9,6 @@ const Map = dynamic(() => import("./components/Map"), { ssr: false });
 import { withAuth } from './components/withAuth';
 
 const RouteOptimization = () => {
-  const handleLogout = () => {
-    console.log("User logged out");
-  };
-
   const [isClient, setIsClient] = useState(false);
   const [cityOptions, setCityOptions] = useState([]);
   const [selectedSource, setSelectedSource] = useState('');
@@ -89,7 +85,7 @@ const RouteOptimization = () => {
         <div className="flex h-screen">
           <Sidebar />
           <div className="bg-[#fefee3ff] flex-1">
-            <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
+            <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png"/>
             <div className="p-6">
               <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Plan Your Deliveries.</h1>
               
