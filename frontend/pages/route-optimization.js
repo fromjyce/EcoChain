@@ -4,6 +4,8 @@ import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
 import Papa from 'papaparse';
+import dynamic from "next/dynamic";
+const Map = dynamic(() => import("./components/Map"), { ssr: false });
 
 const RouteOptimization = () => {
   const handleLogout = () => {
@@ -176,6 +178,9 @@ const RouteOptimization = () => {
                   </ul>
                 </div>
               )}
+              <div className="h-96 mt-5">
+                <Map locations={["Tamil Nadu", "India"]} />
+              </div>
             </div>
           </div>
         </div>
