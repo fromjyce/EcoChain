@@ -88,7 +88,7 @@ const RouteOptimization = () => {
           <div className="bg-[#fefee3ff] flex-1">
             <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
             <div className="p-6">
-              <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Plan Your Deliveries</h1>
+              <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Plan Your Deliveries.</h1>
               
               <div className="mb-6">
                 <label className="block text-xl font-bold mb-2 urbanist text-[#2c6e49ff]">Select Source City:</label>
