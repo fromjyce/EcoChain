@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const Navbar = ({ smbName, logoPath, onLogout }) => {
+const Navbar = ({ smbName, logoPath}) => {
   const [isClient, setIsClient] = useState(false);
     useEffect(() => {
         setIsClient(true);
