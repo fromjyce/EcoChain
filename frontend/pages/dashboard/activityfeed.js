@@ -1,4 +1,4 @@
-const ActivityFeed = ({ activities }) => {
+const ActivityFeed = ({ activities = [] }) => {
   return (
     <div className="bg-[#6eaa88] p-3 rounded shadow">
       <h2 className="text-2xl font-bold urbanist text-[#363529] mb-1">Activity Feed</h2>
