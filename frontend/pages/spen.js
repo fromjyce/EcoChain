@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
 import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./components/Map"), { ssr: false });
-import { withAuth } from './components/withAuth';
+import { withAuth } from '../components/withAuth';
 
 const SPEN = () => {
     const [isClient, setIsClient] = useState(false);

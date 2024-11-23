@@ -7,7 +7,7 @@ import GreenScoreWidget from './dashboard/amascore';
 import EcoPointsTracker from './dashboard/ecopoints';
 import ActivityFeed from './dashboard/activityfeed';
 import QuickLinks from './dashboard/quicklinks';
-import { withAuth } from './components/withAuth';
+import { withAuth } from '../components/withAuth';
 
 const Dashboard = () => {
     const [isClient, setIsClient] = useState(false);
