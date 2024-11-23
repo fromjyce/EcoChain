@@ -1,5 +1,6 @@
 "use client";
 import Sidebar from './components/sidebar';
+import { withAuth } from './components/withAuth';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
@@ -169,4 +170,4 @@ const Analytics = () => {
   );
 };
 
-export default Analytics;
+export default withAuth(Analytics);
