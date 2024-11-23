@@ -15,12 +15,12 @@ const Profile = () => {
   const [smbDetails, setSmbDetails] = useState({
     photo: "/dummy/smblogo.png",
     name: "EcoDelight Crafts",
-    address: "123 Green Street",
-    city: "Springfield",
-    state: "IL",
-    country: "USA",
+    address: "New Perungalathur",
+    city: "Chennai",
+    state: "Tamil Nadu",
+    country: "India",
     website: "https://www.ecodelight.com",
-    phone: "+1 234 567 890",
+    phone: "+91 76575 74485",
   });
 
   const [userDetails, setUserDetails] = useState({
@@ -103,7 +103,7 @@ const Profile = () => {
               <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Your Profile.</h1>
               <section className="mb-10">
                 <h2 className="text-3xl font-bold mb-4 urbanist text-[#102409]">Your Business Details</h2>
-                <div className='bg-[#f4f4f4] p-6 rounded rounded-lg shadow-lg poppins'>
+                <div className='bg-[#f4f4f4] p-6 rounded rounded-lg shadow-xl poppins'>
                 <div className="flex items-center gap-6">
                   <img src={smbDetails.photo} alt="SMB Logo" className="w-48 h-48 rounded-full" />
                   <div>
@@ -229,7 +229,7 @@ const Profile = () => {
               </section>
               <section className='mb-10'>
                 <h2 className="text-3xl font-bold mb-4 urbanist text-[#102409]">Your Account</h2>
-                <div className='bg-[#f4f4f4] p-6 rounded rounded-lg shadow-lg poppins'>
+                <div className='bg-[#f4f4f4] p-6 rounded rounded-lg shadow-xl poppins'>
                 <div className="flex flex-wrap gap-6 mb-4">
                   <div className="flex-1">
                     <label className="block text-lg font-semibold text-[#4c956cff]" htmlFor="user-name">Name</label>
@@ -281,7 +281,7 @@ const Profile = () => {
 
               <section>
                 <h2 className="text-3xl font-bold mb-4 urbanist text-[#102409]">Your Activity Feed</h2>
-                <div className="h-48 overflow-y-auto bg-[#f4f4f4] p-4 rounded rounded-lg shadow-lg">
+                <div className="h-48 overflow-y-auto bg-[#f4f4f4] p-4 rounded rounded-lg shadow-xl">
                   {activities.map((activity) => (
                     <div key={activity.id} className="mb-2 flex justify-between items-center">
                       <p className="font-bold text-[#102409] poppins">{activity.action}</p>
