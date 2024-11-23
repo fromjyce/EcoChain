@@ -1,4 +1,5 @@
 import "../app/globals.css"
+import { AuthProvider } from "@/context/useAuth";
 import {Poppins, Urbanist, Kumbh_Sans, Kanit} from "next/font/google";
 
 const poppins_init = Poppins({
@@ -33,9 +34,11 @@ export const metadata = {
 function MyApp({ Component, pageProps }) {
     return (
         <div className={`${urbanist_init.variable} ${kumbh_sans_init.variable} ${poppins_init.variable} ${kanit_init.variable}`}>
+          <AuthProvider>
           <main>
             <Component {...pageProps} />
           </main>
+          </AuthProvider>
         </div>
       );
 }
