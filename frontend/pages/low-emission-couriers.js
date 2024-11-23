@@ -5,10 +5,6 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
 import { withAuth } from './components/withAuth';
 
-const handleLogout = () => {
-    console.log("User logged out");
-};
-
 const couriers = [
     { id: 1, name: "DHL Express", source: "Mumbai", destination: "Delhi", productType: "Glass", emissions: "Low", cost: 120, deliveryTime: "1-2 days" },
     { id: 2, name: "DTDC Express", source: "Bangalore", destination: "Hyderabad", productType: "Food", emissions: "Moderate", cost: 100, deliveryTime: "2-3 days" },
@@ -85,7 +81,7 @@ const LowEmissionCouriers = () => {
                 <div className="flex">
                     <Sidebar />
                     <div className="bg-[#fefee3ff] flex-1">
-                        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
+                        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png"/>
                         <div className="p-6 ">
                             <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Find Your Couriers.</h1>
                             <div className="mb-6">
