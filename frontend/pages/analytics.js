@@ -1,6 +1,6 @@
 "use client";
 import Sidebar from './components/sidebar';
-import { withAuth } from '../components/withAuth';
+import { withAuth } from '../hocs/withAuth';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';

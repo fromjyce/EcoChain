@@ -3,7 +3,7 @@ import Sidebar from './components/sidebar';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
-import { withAuth } from '../components/withAuth';
+import { withAuth } from '../hocs/withAuth';
 
 const Profile = () => {
   const [isClient, setIsClient] = useState(false);

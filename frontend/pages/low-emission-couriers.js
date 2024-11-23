@@ -3,7 +3,7 @@ import Sidebar from './components/sidebar';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
-import { withAuth } from '../components/withAuth';
+import { withAuth } from '../hocs/withAuth';
 
 const couriers = [
     { id: 1, name: "DHL Express", source: "Mumbai", destination: "Delhi", productType: "Glass", emissions: "Low", cost: 120, deliveryTime: "1-2 days" },
