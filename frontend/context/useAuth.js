@@ -1,8 +1,13 @@
 import { createContext, useContext, useState } from 'react';
+import { useRouter } from 'next/router';
+
 const AuthContext = createContext();
+
 export const useAuth = () => useContext(AuthContext);
+
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const router = useRouter();
 
   const login = (email, password) => {
     if (email === 'root@gmail.com' && password === 'root@123') {
@@ -12,7 +17,11 @@ export const AuthProvider = ({ children }) => {
     return false;
   };
 
-  const logout = () => setUser(null);
+  const logout = () => {
+    setUser(null);
+    router.push('/signin');
+  };
+
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
       {children}
