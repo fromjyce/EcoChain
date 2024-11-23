@@ -3,6 +3,7 @@ import Sidebar from './components/sidebar';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
+import { withAuth } from './components/withAuth';
 
 const handleLogout = () => {
     console.log("User logged out");
@@ -171,4 +172,4 @@ const LowEmissionCouriers = () => {
     );
 };
 
-export default LowEmissionCouriers;
+export default withAuth(LowEmissionCouriers);
