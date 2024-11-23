@@ -22,6 +22,10 @@ const handleLogout = () => {
   console.log("User logged out");
 };
 
+const handleDownloadReport = () => {
+  console.log("Download button clicked");
+};
+
 const Analytics = () => {
   const [isClient, setIsClient] = useState(false);
   
@@ -95,7 +99,14 @@ const Analytics = () => {
           <div className="bg-[#fefee3ff] flex-1">
             <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
             <div className='p-6'>
-              <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Track Your Impact.</h1>
+              <div className="flex items-center justify-between mb-6">
+                <h1 className="text-5xl font-bold text-[#102409] urbanist">Track Your Impact.</h1>
+                <button 
+                  onClick={handleDownloadReport} 
+                  className="bg-[#4C956CFF] hover:bg-[#3b7a58] text-black poppins font-semibold py-2 px-4 rounded-md shadow-md">
+                  Download Your Report
+                </button>
+              </div>
               <div className="mb-10">
                 <h2 className="text-3xl font-semibold mb-4 urbanist text-[#183D15]">Emissions Saved Over Time</h2>
                 <div className="flex mb-6">
