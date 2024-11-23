@@ -7,10 +7,6 @@ import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./components/Map"), { ssr: false });
 import { withAuth } from './components/withAuth';
 
-const handleLogout = () => {
-    console.log("User logged out");
-  };
-
 const SPEN = () => {
     const [isClient, setIsClient] = useState(false);
     useEffect(() => {
@@ -41,7 +37,7 @@ const SPEN = () => {
       <div className="flex">
         <Sidebar />
         <div className="bg-[#fefee3ff] flex-1">
-        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
+        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png"/>
         <div className='p-6'>
           <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Manage Your Packages.</h1>
             <div className='space-y-8'>
