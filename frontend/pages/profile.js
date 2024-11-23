@@ -5,10 +5,6 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
 import { withAuth } from './components/withAuth';
 
-const handleLogout = () => {
-  console.log("User logged out");
-};
-
 const Profile = () => {
   const [isClient, setIsClient] = useState(false);
   const [isEditingSMB, setIsEditingSMB] = useState(false);
@@ -99,7 +95,7 @@ const Profile = () => {
         <div className="flex">
           <Sidebar />
           <div className="bg-[#fefee3ff] flex-1">
-            <Navbar smbName={smbDetails.name} logoPath={smbDetails.photo} onLogout={handleLogout} />
+            <Navbar smbName={smbDetails.name} logoPath={smbDetails.photo}/>
             <div className="p-6">
               <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Your Profile.</h1>
               <section className="mb-10">
