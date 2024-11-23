@@ -9,11 +9,6 @@ import ActivityFeed from './dashboard/activityfeed';
 import QuickLinks from './dashboard/quicklinks';
 import { withAuth } from './components/withAuth';
 
-
-const handleLogout = () => {
-    console.log("User logged out");
-  };
-
 const Dashboard = () => {
     const [isClient, setIsClient] = useState(false);
     useEffect(() => {
@@ -35,7 +30,7 @@ const Dashboard = () => {
       <div className="flex">
         <Sidebar />
         <div className="bg-[#fefee3ff] flex-1">
-        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
+        <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png"/>
         <div className='p-6'>
           <h1 className="text-5xl font-bold text-[#102409] mb-6 urbanist">Your Dashboard.</h1>
           <div className="grid grid-cols-3 gap-5">
