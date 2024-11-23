@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
 import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./components/Map"), { ssr: false });
+import { withAuth } from './components/withAuth';
 
 const handleLogout = () => {
     console.log("User logged out");
@@ -133,8 +134,6 @@ const SPEN = () => {
           Submit Request
         </button>
       </form>
-
-      {/* Location Map */}
       <div className="h-96">
         <Map locations={packagingData.map((pkg) => pkg.location)} />
       </div>
@@ -147,4 +146,4 @@ const SPEN = () => {
   );
 };
 
-export default SPEN;
+export default withAuth(SPEN);
