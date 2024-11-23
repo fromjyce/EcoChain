@@ -19,10 +19,6 @@ ChartJS.register(
   ArcElement
 );
 
-const handleLogout = () => {
-  console.log("User logged out");
-};
-
 const handleDownloadReport = () => {
   console.log("Download button clicked");
 };
@@ -98,7 +94,7 @@ const Analytics = () => {
         <div className="flex">
           <Sidebar />
           <div className="bg-[#fefee3ff] flex-1">
-            <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png" onLogout={handleLogout} />
+            <Navbar smbName="EcoDelight Crafts" logoPath="/dummy/smblogo.png"/>
             <div className='p-6'>
               <div className="flex items-center justify-between mb-6">
                 <h1 className="text-5xl font-bold text-[#102409] urbanist">Track Your Impact.</h1>
