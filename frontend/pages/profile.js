@@ -3,6 +3,7 @@ import Sidebar from './components/sidebar';
 import Head from "next/head";
 import { useEffect, useState } from 'react';
 import Navbar from './components/navbar';
+import { withAuth } from './components/withAuth';
 
 const handleLogout = () => {
   console.log("User logged out");
@@ -298,4 +299,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default withAuth(Profile);
