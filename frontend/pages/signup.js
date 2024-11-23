@@ -2,12 +2,20 @@
 import { useEffect, useState } from 'react';
 import Head from "next/head";
 import Footer from "./components/footer";
+import { useRouter } from 'next/router';
 
 export default function SignIn() {
   const [isClient, setIsClient] = useState(false);
-    useEffect(() => {
-        setIsClient(true);
-    }, []);
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    router.push('/signin');
+  };
+
   return (
     <>
       <Head>
@@ -19,9 +27,9 @@ export default function SignIn() {
         <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg flex overflow-hidden">
           <div className="w-1/2 p-8">
             <h2 className="text-2xl font-bold text-center poppins text-[#102409]">Sign Up for EcoChain</h2>
-            <form className="mt-6">
+            <form className="mt-6" onSubmit={handleSubmit}> {/* Add onSubmit handler here */}
               <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-bold kumbh_sans text-[#2c6e49ff]">
+                <label htmlFor="name" className="block text-sm font-bold kumbh_sans text-[#2c6e49ff]">
                   Name
                 </label>
                 <input
@@ -39,7 +47,7 @@ export default function SignIn() {
                 <input
                   type="email"
                   id="email"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
                   placeholder="Enter your email"
                   required
                 />
@@ -78,7 +86,7 @@ export default function SignIn() {
               </div>
             </form>
             <p className="mt-4 text-sm text-[#2c6e49ff] font-bold poppins text-center">
-            Already have an account?{" "}
+              Already have an account?{" "}
               <a href="/signin" className="text-[#4c956cff] hover:underline hover:text-[#102409]">
                 Sign In
               </a>
