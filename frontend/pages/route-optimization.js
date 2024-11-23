@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import Papa from 'papaparse';
 import dynamic from "next/dynamic";
 const Map = dynamic(() => import("./components/Map"), { ssr: false });
+import { withAuth } from './components/withAuth';
 
 const RouteOptimization = () => {
   const handleLogout = () => {
@@ -189,4 +190,4 @@ const RouteOptimization = () => {
   );
 };
 
-export default RouteOptimization;
+export default withAuth(RouteOptimization);
