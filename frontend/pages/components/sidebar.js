@@ -7,7 +7,7 @@ import { FaHome, FaRoute, FaTruck, FaChartLine, FaUserCircle } from 'react-icons
 const navItems = [
   { name: "Home", path: "/dashboard", icon: <FaHome /> },
   { name: "Plan Deliveries", path: "/route-optimization", icon: <FaRoute /> },
-  { name: "Find Green Couriers", path: "/low-emission-couriers", icon: <FaTruck /> },
+  { name: "Manage Green Couriers", path: "/low-emission-couriers", icon: <FaTruck /> },
   { name: "Track Your Impact", path: "/analytics", icon: <FaChartLine /> },
   { name: "Your Account", path: "/profile", icon: <FaUserCircle /> },
 ];
