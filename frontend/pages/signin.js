@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useAuth } from '@/context/useAuth';
 import Head from "next/head";
 import { FaExclamationCircle } from "react-icons/fa";
 import Footer from "./components/footer";
@@ -9,6 +11,20 @@ export default function SignIn() {
     useEffect(() => {
         setIsClient(true);
     }, []);
+    const { login } = useAuth();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const router = useRouter();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (login(email, password)) {
+      router.push('/dashboard');
+    } else {
+      setError('Invalid credentials');
+    }
+  };
   return (
     <>
       <Head>
@@ -20,7 +36,7 @@ export default function SignIn() {
         <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg flex overflow-hidden">
           <div className="w-1/2 p-8">
             <h2 className="text-2xl font-bold text-center poppins text-[#102409]">Sign In to EcoChain</h2>
-            <form className="mt-6">
+            <form className="mt-6"  onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="email" className="block text-sm font-bold kumbh_sans text-[#2c6e49ff]">
                   Email
@@ -28,6 +44,8 @@ export default function SignIn() {
                 <input
                   type="email"
                   id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
                   placeholder="Enter your email"
                   required
@@ -40,6 +58,8 @@ export default function SignIn() {
                 <input
                   type="password"
                   id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#4c956cff] focus:ring-[#4c956cff]"
                   placeholder="Enter your password"
                   required
@@ -79,6 +99,7 @@ export default function SignIn() {
             </p>
           </div>
         </div>
+        {error && <p>{error}</p>}
       </main>
       <div className="signin-bottom-spacer bg-[#fefee3ff]"></div>
       <Footer />
