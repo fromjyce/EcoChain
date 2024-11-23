@@ -7,6 +7,7 @@ import GreenScoreWidget from './dashboard/amascore';
 import EcoPointsTracker from './dashboard/ecopoints';
 import ActivityFeed from './dashboard/activityfeed';
 import QuickLinks from './dashboard/quicklinks';
+import { withAuth } from './components/withAuth';
 
 
 const handleLogout = () => {
@@ -52,4 +53,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default withAuth(Dashboard);
