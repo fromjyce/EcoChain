@@ -58,7 +58,6 @@ export default function Main() {
 
                 </div>
                 </div>
-                <div className="more-spacer-bottom bg-[#fefee3ff]"></div>
                 <Footer />
             </main>
     </>
