@@ -134,7 +134,7 @@ python manage.py runserver  # Runs on http://localhost:8000
 
 ## **Important Links**
 - [GitHub Repository](https://github.com/fromjyce/EcoChain)
-- [Prototype Link](https://eco-chain-three.vercel.app/)
+- [Deployment Link](https://eco-chain-three.vercel.app/)
 - [Demo Video Link](https://your-demo-link)
 
 ---
