@@ -35,7 +35,7 @@ export default function SignIn() {
       <main className="bg-[#fefee3ff] flex items-center justify-center">
         <div className="w-full max-w-4xl bg-white shadow-lg rounded-lg flex overflow-hidden">
           <div className="w-1/2 p-8">
-            <h2 className="text-2xl font-bold text-center poppins text-[#102409]">Sign In to EcoChain</h2>
+            <h2 className="text-2xl font-bold text-center poppins text-[#102409]">Sign In to <a href="/" className="text-[#4c956cff] hover:underline hover:text-[#102409]">EcoChain</a></h2>
             <form className="mt-6"  onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="email" className="block text-sm font-bold kumbh_sans text-[#2c6e49ff]">
