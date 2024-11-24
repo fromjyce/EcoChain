@@ -84,6 +84,7 @@ const Analytics = () => {
   const barrecommendationText = "Focus on improving the reuse of metal and cardboard packaging by implementing better collection and sorting processes. Encourage customers to return used materials through incentive programs to increase recycling rates.";
   const pierecommendationText = "Capitalize on the seasonal uptick by promoting EcoPoints initiatives during high-impact quarters like Q4. Introduce limited-time bonuses and reward programs to encourage consistent usage throughout the year.";
   const renewableEnergyRecommendationText = "Integrating renewable energy sources such as solar and wind can reduce operational costs, decrease emissions, and help align your logistics network with future sustainability goals. Consider investing in green energy solutions for warehouses and delivery fleets.";
+  const warehouseOptimizationRecommendationText = "To further reduce emissions and operational costs, consider implementing energy-efficient practices within your warehouses. Using LED lighting, smart HVAC systems, and automated energy management technologies can lower energy consumption and reduce your carbon footprint. Additionally, consider exploring green energy solutions like solar panels to power your warehouse operations.";
 
   return (
     <>
@@ -130,6 +131,7 @@ const Analytics = () => {
                   <div className="flex-1 mr-4 bg-[#F4F4F4] p-4 border rounded-md shadow-md relative">
                     <h2 className="text-2xl font-bold mb-4 poppins text-[#4c956cff]">AI Recommendations</h2>
                     <p className='kumbh_sans'>{barrecommendationText}</p>
+                    <p className="kumbh_sans text-lg font-semibold text-[#102409] mt-4">{warehouseOptimizationRecommendationText}</p>
                     <div className="absolute bottom-2 right-2 text-gray-400 poppins text-sm">
                       Powered by Meta Llama 2
                     </div>
