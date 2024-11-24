@@ -80,9 +80,10 @@ const Analytics = () => {
     ],
   };
 
-  const linerecommendationText = "Great progress! To maintain this upward trend, consider adopting additional energy-efficient practices and exploring renewable energy sources for logistics. Collaborate with partners to optimize transportation routes further.";
+  const linerecommendationText = "Great progress! To maintain this upward trend, consider adopting additional energy-efficient practices and exploring renewable energy sources for logistics. Collaborate with partners to optimize transportation routes further. Renewable energy solutions like solar and wind can help power your logistics operations.";
   const barrecommendationText = "Focus on improving the reuse of metal and cardboard packaging by implementing better collection and sorting processes. Encourage customers to return used materials through incentive programs to increase recycling rates.";
   const pierecommendationText = "Capitalize on the seasonal uptick by promoting EcoPoints initiatives during high-impact quarters like Q4. Introduce limited-time bonuses and reward programs to encourage consistent usage throughout the year.";
+  const renewableEnergyRecommendationText = "Integrating renewable energy sources such as solar and wind can reduce operational costs, decrease emissions, and help align your logistics network with future sustainability goals. Consider investing in green energy solutions for warehouses and delivery fleets.";
 
   return (
     <>
@@ -116,6 +117,7 @@ const Analytics = () => {
                   <div className="flex-1 bg-[#F4F4F4] p-4 border rounded-md shadow-md relative">
                     <h2 className="text-2xl font-bold mb-4 poppins text-[#4c956cff]">AI Recommendations</h2>
                     <p className='kumbh_sans'>{linerecommendationText}</p>
+                    <p className="kumbh_sans text-lg font-semibold text-[#102409] mt-4">{renewableEnergyRecommendationText}</p>
                     <div className="absolute bottom-2 right-2 text-gray-400 poppins text-sm">
                       Powered by Meta Llama 2
                     </div>
