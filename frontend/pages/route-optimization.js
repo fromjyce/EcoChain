@@ -15,11 +15,13 @@ const RouteOptimization = () => {
   const [selectedDestination, setSelectedDestination] = useState('');
   const [intermediateStops, setIntermediateStops] = useState([]);
   const [newStop, setNewStop] = useState('');
-
+  
   const [routeDetails, setRouteDetails] = useState(null);
   const distanceData = [50, 100, 200, 300, 400, 500];
   const timeData = [30, 60, 120, 150, 200];
   const emissionsData = [5, 10, 15, 20, 25];
+  const [isBatchingEnabled, setIsBatchingEnabled] = useState(false);
+  const [isHyperlocalEnabled, setIsHyperlocalEnabled] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
@@ -61,6 +63,15 @@ const RouteOptimization = () => {
 
   const handleOptimizeRoute = () => {
     if (selectedSource && selectedDestination) {
+      let totalStops = [selectedSource, ...intermediateStops, selectedDestination];
+      if (isBatchingEnabled) {
+        totalStops = totalStops.filter((stop, index) => index % 2 === 0); // Simplified batching for demo
+      }
+
+      if (isHyperlocalEnabled) {
+        totalStops = totalStops.filter((stop) => stop.includes("local")); // Example logic for hyperlocal
+      }
+
       const randomDistance = distanceData[Math.floor(Math.random() * distanceData.length)];
       const randomTime = timeData[Math.floor(Math.random() * timeData.length)];
       const randomEmissions = emissionsData[Math.floor(Math.random() * emissionsData.length)];
@@ -69,6 +80,7 @@ const RouteOptimization = () => {
         distance: randomDistance,
         time: randomTime,
         emissions: randomEmissions,
+        stops: totalStops,
       });
     } else {
       alert("Please select both source and destination.");
@@ -158,6 +170,28 @@ const RouteOptimization = () => {
                 </ul>
               </div>
 
+              <div className="mb-6">
+                <label className="block text-xl font-bold mb-2 urbanist text-[#2c6e49ff]">Enable Batching:</label>
+                <input
+                  type="checkbox"
+                  checked={isBatchingEnabled}
+                  onChange={(e) => setIsBatchingEnabled(e.target.checked)}
+                  className="mr-2"
+                />
+                <span>Enable batching of deliveries to optimize routes</span>
+              </div>
+
+              <div className="mb-6">
+                <label className="block text-xl font-bold mb-2 urbanist text-[#2c6e49ff]">Enable Hyperlocal Deliveries:</label>
+                <input
+                  type="checkbox"
+                  checked={isHyperlocalEnabled}
+                  onChange={(e) => setIsHyperlocalEnabled(e.target.checked)}
+                  className="mr-2"
+                />
+                <span>Enable prioritization of local routes to reduce distances</span>
+              </div>
+
               <button
                 className="p-4 bg-[#102409] text-white rounded w-full font-bold poppins"
                 onClick={handleOptimizeRoute}
@@ -169,6 +203,7 @@ const RouteOptimization = () => {
                 <div className="mt-6">
                   <h2 className="text-3xl font-semibold urbanist text-[#102409]">Route Details</h2>
                   <ul className="mt-2">
+                    <li className='poppins text-xl mb-1'><strong>Stops:</strong> {routeDetails.stops.join(' → ')}</li>
                     <li className='poppins text-xl mb-1'><strong>Distance:</strong> {routeDetails.distance} km</li>
                     <li className='poppins text-xl mb-1'><strong>Time:</strong> {routeDetails.time} minutes</li>
                     <li className='poppins text-xl mb-1'><strong>Estimated Emissions:</strong> {routeDetails.emissions} kg CO2</li>
