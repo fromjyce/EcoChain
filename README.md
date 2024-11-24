@@ -6,6 +6,16 @@ EcoChain is an AI-driven solution designed to optimize **logistics**, **route op
 
 ---
 
+## **Key Features of EcoChain**
+
+- **Amazon Green Score**: A real-time tracking system that calculates the **environmental impact** of **delivery routes**, **packaging**, and **courier selection**.
+- **EcoPoints System**: **Incentivizes eco-friendly choices** made by users, such as choosing **low-emission couriers** and **reusable packaging**. Users earn points for making sustainable choices.
+- **Smart Packaging Exchange Network (SPEN)**: Facilitates the exchange of **reusable packaging** between SMBs, integrating with **IoT technologies** to track packaging locations and usage.
+- **AI-Driven Route Optimization**: **AI models** (using **AWS SageMaker**) provide optimized **delivery routes** that minimize **carbon emissions** and **delivery time** based on **real-time data**.
+- **Low-Emission Courier Marketplace**: Allows SMBs to select **green delivery services** based on **carbon emission ratings** and **delivery costs**.
+
+---
+
 ## **Prerequisites**
 
 Before running EcoChain locally or in a deployed environment, ensure that you have the following installed:
@@ -98,16 +108,6 @@ npm run dev  # Runs on http://localhost:3000
 ```bash
 python manage.py runserver  # Runs on http://localhost:8000
 ```
-
----
-
-## **Key Features of EcoChain**
-
-- **Amazon Green Score**: A real-time tracking system that calculates the **environmental impact** of **delivery routes**, **packaging**, and **courier selection**.
-- **EcoPoints System**: **Incentivizes eco-friendly choices** made by users, such as choosing **low-emission couriers** and **reusable packaging**. Users earn points for making sustainable choices.
-- **Smart Packaging Exchange Network (SPEN)**: Facilitates the exchange of **reusable packaging** between SMBs, integrating with **IoT technologies** to track packaging locations and usage.
-- **AI-Driven Route Optimization**: **AI models** (using **AWS SageMaker**) provide optimized **delivery routes** that minimize **carbon emissions** and **delivery time** based on **real-time data**.
-- **Low-Emission Courier Marketplace**: Allows SMBs to select **green delivery services** based on **carbon emission ratings** and **delivery costs**.
 
 ---
 
