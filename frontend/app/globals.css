@@ -88,3 +88,11 @@ height: 6.5rem;
   padding-top: 70px;
   padding-left: 250px;
 }
+
+.more-top-spacer {
+  height: 3rem;
+}
+
+.more-bottom-spacer {
+  height: 3rem;
+}
