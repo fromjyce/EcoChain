@@ -85,28 +85,7 @@ The backend is built with **Django** to manage **API requests**, **user authenti
 
 ---
 
-### 4. **Environment Configuration**
-
-If you're deploying EcoChain in a production environment, or if you need to use **AWS services** (e.g., for route optimization with **AWS SageMaker**, **IoT** integration for SPEN), you'll need to set up the following environment variables:
-
-1. **AWS Credentials** (if using AWS for route optimization or data storage):
-   ```bash
-   export AWS_ACCESS_KEY_ID="your-access-key-id"
-   export AWS_SECRET_ACCESS_KEY="your-secret-access-key"
-   ```
-
-2. **Database Settings** (adjust these as per your database):
-   - Add the database configuration in your `settings.py` file in the Django project.
-
-3. **Email Settings** (for sending EcoPoints reports or notifications):
-   - Add email service credentials (e.g., **SMTP**, **SES**) in `settings.py`.
-
-4. **ML Model** (for route optimization and EcoPoints recommendation via **Meta Llama 2**):
-   - Ensure **AWS SageMaker** is correctly set up for your **route optimization** model or your locally hosted model is integrated.
-
----
-
-### 5. **Running the Application**
+### 4. **Running the Application**
 
 After setting up both the frontend and backend, you can run the full application locally by starting both the **Next.js** frontend and **Django** backend servers. Ensure both are running simultaneously.
 
