@@ -24,6 +24,7 @@ const LowEmissionCouriers = () => {
         cost: "",
         deliveryTime: "",
     });
+    const [ecoDeliveryIncentive, setEcoDeliveryIncentive] = useState(0);
 
     useEffect(() => {
         setIsClient(true);
@@ -71,6 +72,14 @@ const LowEmissionCouriers = () => {
         setFilteredCouriers(couriers);
     };
 
+    const handleEcoDeliveryChoice = (e) => {
+        if (e.target.value === 'delayed') {
+            setEcoDeliveryIncentive(10);
+        } else {
+            setEcoDeliveryIncentive(0);
+        }
+    };
+
     return (
         <>
             <Head>
@@ -112,6 +121,31 @@ const LowEmissionCouriers = () => {
                                     >
                                         Clear Filters
                                     </button>
+                                </div>
+                                <div className="flex mt-4">
+                                    <label className="mr-4 poppins font-bold text-[#102409]">Choose Delivery Preference:</label>
+                                    <div>
+                                        <input 
+                                            type="radio" 
+                                            id="sameDay" 
+                                            name="deliveryChoice" 
+                                            value="sameDay" 
+                                            checked={ecoDeliveryIncentive === 0} 
+                                            onChange={handleEcoDeliveryChoice} 
+                                        />
+                                        <label htmlFor="sameDay" className='kumbh_sans ml-3 font-semibold'>Same Day Delivery</label>
+                                    </div>
+                                    <div className="ml-6">
+                                        <input 
+                                            type="radio" 
+                                            id="delayed" 
+                                            name="deliveryChoice" 
+                                            value="delayed" 
+                                            checked={ecoDeliveryIncentive === 10} 
+                                            onChange={handleEcoDeliveryChoice} 
+                                        />
+                                        <label htmlFor="delayed"  className='kumbh_sans ml-3 font-semibold'>Delayed Delivery (Earn EcoPoints)</label>
+                                    </div>
                                 </div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
