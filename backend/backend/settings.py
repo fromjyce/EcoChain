@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'dashboard',
     'route_optimization',
     'spen',
+    'couriers',
 ]
 
 MIDDLEWARE = [
