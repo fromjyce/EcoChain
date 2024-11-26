@@ -23,4 +23,5 @@ urlpatterns = [
     path('route/', include('route_optimization.urls')),
     path('spen/', include('spen.urls')),
     path('couriers/', include('couriers.urls')),
+    path('analytics/', include('analytics.urls')),
 ]
