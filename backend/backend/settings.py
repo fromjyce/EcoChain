@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'spen',
     'couriers',
     'analytics',
+    'accounts',
 ]
 
 MIDDLEWARE = [
