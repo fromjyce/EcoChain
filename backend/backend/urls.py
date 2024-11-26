@@ -22,4 +22,5 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('route/', include('route_optimization.urls')),
     path('spen/', include('spen.urls')),
+    path('couriers/', include('couriers.urls')),
 ]
