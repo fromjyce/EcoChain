@@ -118,6 +118,14 @@ python manage.py runserver  # Runs on http://localhost:8000
 
 ---
 
-### **License**
+## Contact
 
-All the code in this repository is licensed under the **MIT License**. You are free to use and modify it for educational purposes. However, I do not take any responsibility for the accuracy or reliability of the code.
+If you come across any issues, have suggestions for improvement, or want to discuss further enhancements, feel free to contact me at [jaya2004kra@gmail.com](mailto:jaya2004kra@gmail.com). Your feedback is greatly appreciated.
+
+## License
+
+All the code and resources in this repository are licensed under the MIT License. You are free to use, modify, and distribute the code under the terms of this license. However, I do not take responsibility for the accuracy or reliability of the programs.
+
+## Social Profiles:
+
+[**LINKEDIN - Jayashre**](https://www.linkedin.com/in/jayashrek/)
